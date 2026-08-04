@@ -593,7 +593,9 @@
             box-shadow: 0 8px 25px rgba(157, 0, 255, 0.5);
         }
 
-
+        /* ------------------------------------- */
+        /*   FIXED BRAND COLORS & POP-OUT EFFECT */
+        /* ------------------------------------- */
         .contact-list {
             display: flex; flex-direction: column; gap: 18px; max-width: 600px; margin: 0 auto;
         }
@@ -604,14 +606,14 @@
             border: 1px solid rgba(255, 255, 255, 0.1); 
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-            color: #ffffff; /
+            color: #ffffff; /* Text सधैं सेतो */
             font-weight: 700; 
             font-size: 1.15rem;
             position: relative;
             z-index: 1;
         }
 
-
+        /* Hover गर्दा माथि पप-आउट (Pop-out) हुने */
         .social-row:hover { 
             transform: scale(1.05) translateY(-6px); 
             z-index: 2;
@@ -621,7 +623,8 @@
             font-size: 2.2rem; 
             width: 45px; 
             text-align: center; 
-            color: #ffffff;            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+            color: #ffffff; /* Icon पनि सधैं सेतो */
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
             transition: transform 0.4s ease;
         }
 
@@ -629,7 +632,7 @@
             transform: scale(1.15) rotate(-8deg);
         }
 
-   
+        /* Fixed Background Colors */
         .social-row.whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); }
         .social-row.whatsapp:hover { box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5); }
         
@@ -890,10 +893,19 @@
                         </div>
                     </div>
                 </div>
-               <a href="https://github.com/ankitshah123a-lang/ankit/blob/main/app-release.apk" class="install-btn" id="install-btn" download>Install</a>
+                <button class="install-btn" id="install-btn">Install</button>
             </div>
         </div>
     </section>
+
+    <div id="maintenance-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>System Maintenance</h3>
+            <p>The application is currently undergoing scheduled professional upgrades to enhance your experience. Please check back soon.</p>
+        </div>
+    </div>
 
     <section id="interactive-art">
         <h2 class="section-title" data-aos="fade-up">No Thoughts, Just Spins</h2>
